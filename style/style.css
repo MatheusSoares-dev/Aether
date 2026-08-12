@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background: rgba(245, 245, 245, 0.527);
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    backdrop-filter: blur(6px);
+    position: fixed;
+    z-index: 1;
+    mix-blend-mode: ;
+}
+
+.logo h3 {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1.5rem;
+    color: gray;
+}
+
+.link {
+    position: relative;
+    cursor: pointer;
+    transition: color .4s ease-in;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(45deg, rgb(56, 56, 226), rgb(106, 225, 255));
+    transition: width .4s ease-in;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.link:hover {
+    color: rgb(10, 10, 10);
+
+}
+
+.btn-compra button {
+    padding: .6rem .8rem;
+    background-color: #222;
+    border: none;
+    color: ghostwhite;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn-compra button:hover {
+    color: #222;
+    background: gray;
+}
+
+
+.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 0;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fones img {
+    position: relative;
+    width: 5rem;
+    padding: 1rem 0;
+}
+
+.hero-text span {
+    font-size: 8rem;
+    font-weight: 200;
+}
+
+.text-negrito {
+    font-weight: 200;
+    user-select: none;
+}
+
+.text-negrito span {
+    display: inline-block;
+    transition: font-weight .5s ease-in;
+}
+
+.text {
+    color: gray;
+    user-select: none;
+}
+
+.hero-text p {
+    font-family:  sans-serif;
+    font-size: 1.2rem;
+    color: rgb(46, 46, 46);
+}
+
+.detalhe-fones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: rem 0;
+    p{
+        width: 50%;
+        text-align: center;
+    }
+}
+
+.detalhe-fones img {
+    width: 100%;
+}
+
+.sound-box {
+    width: 100%;
+    height: 100vh;
+    background: #222;
+}
